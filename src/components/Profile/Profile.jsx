@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
 
-export const Profile = ({
+const Profile = ({
   name,
   tag,
   location,
@@ -34,3 +34,5 @@ export const Profile = ({
     </div>
   );
 };
+
+export default Profile;

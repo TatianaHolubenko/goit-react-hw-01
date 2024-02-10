@@ -1,7 +1,7 @@
 import css from "./FriendListItem.module.css";
 import clsx from "clsx";
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   const styleOnline = clsx(css.online, isOnline ? css.isOnline : css.isOffline);
   return (
     <div>
@@ -11,3 +11,5 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
     </div>
   );
 };
+
+export default FriendListItem;
